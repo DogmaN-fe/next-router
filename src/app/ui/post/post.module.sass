@@ -1,0 +1,34 @@
+$text-active: #211631
+
+.post
+    padding: 50px 25px
+    max-width: 450px
+    min-height: 250px
+
+    border-radius: 30px
+
+    background-color: #402a5f
+    &__title
+        display: flex
+        margin-bottom: 20px
+        &_text
+            width: 70%
+            margin-right: 20px
+        &_post_id
+            font-size: 15px
+    &__description
+        display: flex
+        flex-direction: column
+
+        &_text
+            margin-bottom: 10px
+        &_link
+            align-self: flex-end
+            text-decoration: underline
+            &:hover
+                color: $text-active
+
+@media (max-width: 600px)
+    .post
+        grid-column: 1 / span 2
+                

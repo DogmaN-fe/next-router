@@ -1,0 +1,26 @@
+$text-active: #422d62
+
+.information
+    padding: 50px 0 0 0
+    width: 100%
+    &__title
+        margin-bottom: 40px
+        font-size: 50px
+    &__description
+        font-size: 30px
+        margin-bottom: 10px
+    &__link
+        font-size: 30px
+        text-decoration: underline
+        transition: color 0.3s
+        &:hover
+            color: $text-active
+
+@media (max-width: 550px)
+    .information
+        &__title
+            font-size: 40px
+        &__description
+            font-size: 20px
+        &__link
+            font-size: 20px

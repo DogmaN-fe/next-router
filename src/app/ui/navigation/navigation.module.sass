@@ -1,0 +1,23 @@
+$text-active: #211631
+
+.navigation_links
+    width: 100%
+    display: flex
+
+    justify-content: center
+
+    list-style-type: none
+
+    &__link
+        font-size: 30px
+        font-weight: 600
+        transition:  color 0.3s
+        &:hover
+            color: $text-active
+        &:not(:last-child)
+            margin-right: 20px
+            
+
+.active_link
+    color: $text-active
+    cursor: default
